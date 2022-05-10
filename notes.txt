@@ -122,3 +122,6 @@ Assignment:02
     If the user choice is NOT 1 - 5
         Diplay "Invalid choice"
         Display the menu again
+
+Functions
+    - anonymous functions
