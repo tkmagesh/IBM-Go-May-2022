@@ -77,4 +77,45 @@ func main() {
 	x, y, str := 100, 200, "Sum of x and y is"
 	result := x + y
 	fmt.Println(str, result)
+
+	//constants
+	const pi float32 = 3.14
+
+	//iota
+	/*
+		const (
+			red   = iota
+			green = iota
+			blue  = iota
+		)
+	*/
+	/*
+		const (
+			red = iota
+			green
+			blue
+		)
+	*/
+
+	/*
+		const (
+			red = iota + 2
+			green
+			blue
+		)
+	*/
+	/*
+		const (
+			red = iota * 2
+			green
+			blue
+		)
+	*/
+	const (
+		red = iota * 2
+		green
+		_
+		blue
+	)
+	fmt.Println("red =", red, "green =", green, "blue =", blue)
 }
