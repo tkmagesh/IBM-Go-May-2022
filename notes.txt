@@ -97,3 +97,11 @@ Programming constructs
     - for
     - switch
     - function
+
+
+Assignment:01
+    Print the first 100 prime numbers from 3
+
+AssignmentL:02
+    Print the prime numbers between 2 and 100
+    
