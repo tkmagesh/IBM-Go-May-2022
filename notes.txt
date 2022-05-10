@@ -65,3 +65,29 @@ for ex: windows
     To change the default environment variables
         go env -w GOOS=linux GOARCH=amd64
         go build -o <build_filename> <filename.go>
+
+Data types
+    string
+    bool
+
+    int
+    int8
+    int16
+    int32
+    int64
+
+    uint
+    uint8
+    uint16
+    uint32
+    uint64
+
+    float32
+    float64
+
+    complex64 (complex number with float32 real and imaginary parts)
+    complex128 (complex number with float64 real and imaginary parts)
+
+    byte (alias for uint8)
+    rune (alias for int32) (unicode code point)
+
