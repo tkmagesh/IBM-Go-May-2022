@@ -125,3 +125,8 @@ Assignment:02
 
 Functions
     - anonymous functions
+    - higher order functions
+        * can be assigned as values to variables
+        * can be passed as arguments to other functions
+        * can be returned as return values from other functions
+        
