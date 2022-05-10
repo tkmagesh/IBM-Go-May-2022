@@ -45,3 +45,23 @@ Why Go?
         SDK
             sync package
 
+
+To run a go program
+    go run <filename.go>
+
+To create a build   
+    go build <filename.go>
+    go build -o <build_filename> <filename.go>
+
+To create a build for other platforms
+for ex: windows
+    
+    GOOS=windows GOARCH=386 go build <filename.go>
+    GOOS=windows GOARCH=386 go build -o <build_filename> <filename.go>
+
+    The list of other platform configurations can be found at :
+        https://go.dev/doc/install/source#environment
+
+    To change the default environment variables
+        go env -w GOOS=linux GOARCH=amd64
+        go build -o <build_filename> <filename.go>
