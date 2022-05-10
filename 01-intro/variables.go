@@ -117,5 +117,6 @@ func main() {
 		_
 		blue
 	)
-	fmt.Println("red =", red, "green =", green, "blue =", blue)
+	//fmt.Println("red =", red, "green =", green, "blue =", blue)
+	fmt.Printf("red = %d, green = %d, blue = %d\n", red, green, blue)
 }
