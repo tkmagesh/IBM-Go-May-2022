@@ -33,4 +33,28 @@ func main() {
 
 	products = append(products, "Stappler")
 	fmt.Printf("len(products) = %d, cap(products) = %d, products = %v\n", len(products), cap(products), products)
+
+	//slicing
+	/*
+		[lo : hi] => from lo to hi-1
+		[lo :] => from lo to len-1
+		[:hi] => from 0 to hi - 1
+		[:] => copy of the slice
+	*/
+
+	fmt.Println("Slicing")
+	fmt.Println("products[2:4] => ", products[2:4])
+	fmt.Println("products[:4] => ", products[:4])
+	fmt.Println("products[2:] => ", products[2:])
+
+	newProducts := products[2:4]
+	newProducts[0] = "Sketch-Pen"
+	fmt.Println("newProducts => ", newProducts)
+	fmt.Println("products => ", products)
+
+	x := []string{}
+	x = append(x, products[:3]...)
+	x = append(x, products[4:]...)
+	fmt.Println(x)
+
 }
