@@ -1,5 +1,15 @@
 package main
 
+import "fmt"
+
+type Product struct {
+	Id       int
+	Name     string
+	Cost     float32
+	Units    int
+	Category string
+}
+
 func main() {
 	/* Create a Product struct with the following fields
 		id, name, cost, units, category
@@ -10,4 +20,30 @@ func main() {
 	   Write a "ApplyDiscount" function to apply a discount on the given product
 	   ApplyDiscount(p, 10) => Cost reduced by 10%
 	*/
+
+	pen := Product{
+		Id:       100,
+		Name:     "Pen",
+		Cost:     10,
+		Units:    100,
+		Category: "Stationary",
+	}
+	fmt.Println("Before applying 10% discount", Format(pen))
+	ApplyDiscount(&pen, 10)
+	fmt.Println("After applying 10% discount", Format(pen))
+
+	penPtr := &pen
+	fmt.Println(penPtr.Name)
+
+	//productPtr := new(Product)
+	//productPtr := &Product{}
+}
+
+func Format(product Product) string {
+	return fmt.Sprintf("Id = %d, Name = %q, Cost = %v, Units = %d, Category = %q", product.Id, product.Name, product.Cost, product.Units, product.Category)
+}
+
+func ApplyDiscount(product *Product, disountPercent float32) {
+	//(*product).Cost = (*product).Cost * ((100 - disountPercent) / 100)
+	product.Cost = product.Cost * ((100 - disountPercent) / 100)
 }
