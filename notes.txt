@@ -178,3 +178,17 @@ Collections
 
     Map
         key/value collection 
+
+Modularity
+    Modules & Packages
+    Modules
+        Distributable unit of code
+        Everything in the module is versioned together
+        It is advisable to have the "repo path" as the module name
+            ex: github.com/tkmagesh/collection-utils
+    Packages
+        Logical grouping of types & functions etc
+        A module can have any number of packages
+
+    To create a module
+        go mod init <module_name>
