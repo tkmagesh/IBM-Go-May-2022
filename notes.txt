@@ -192,3 +192,13 @@ Modularity
 
     To create a module
         go mod init <module_name>
+
+    To download a third party module`
+        go get github.com/fatih/color
+        By default the module is downloaded to the GOPATH/pkg folder
+
+    To update the go.mod file
+        go mod tidy
+
+    To localize the dependencies
+        go mod vendor
