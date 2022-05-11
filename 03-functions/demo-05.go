@@ -1,6 +1,6 @@
 /*
  - higher order functions
-        * can be passed as arguments to other functions
+        * can be returned as return values from other functions
 */
 
 package main
