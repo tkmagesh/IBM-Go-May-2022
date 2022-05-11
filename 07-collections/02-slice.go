@@ -57,4 +57,12 @@ func main() {
 	x = append(x, products[4:]...)
 	fmt.Println(x)
 
+	//creating a copy of the slice
+	nos1 := []int{10, 20, 30, 40}
+	nos2 := make([]int, len(nos1))
+	copy(nos2, nos1)
+	fmt.Println(nos1, nos2)
+	nos2[0] = 100
+	fmt.Println(nos1, nos2)
+
 }
