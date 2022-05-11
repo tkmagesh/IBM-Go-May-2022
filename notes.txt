@@ -202,3 +202,10 @@ Modularity
 
     To localize the dependencies
         go mod vendor
+
+    To build a module
+        go build .
+        go build -o <binary_name> .
+        
+
+Structs
