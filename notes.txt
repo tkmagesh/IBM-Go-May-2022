@@ -129,4 +129,7 @@ Functions
         * can be assigned as values to variables
         * can be passed as arguments to other functions
         * can be returned as return values from other functions
-        
+
+Assignment:03
+    refactor the assignment:02 solution to use functions
+        NOTE : Every function should have only one reason to change (SRP)
