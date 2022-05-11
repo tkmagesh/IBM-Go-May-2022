@@ -31,9 +31,10 @@ func exec(f func()) {
 	f()
 }
 
-func logOperation(x, y int, oper func(int, int)) {
+func logOperation(x, y int, oper func(int, int) int) {
 	fmt.Println("Before invocation")
-	oper(x, y)
+	result := oper(x, y)
+	fmt.Println("Result =", result)
 	fmt.Println("After invocation")
 }
 
@@ -51,12 +52,12 @@ func logSubtract(x, y int) {
 }
 */
 
-func add(x, y int) {
+func add(x, y int) int {
 	result := x + y
-	fmt.Println("Result =", result)
+	return result
 }
 
-func subtract(x, y int) {
+func subtract(x, y int) int {
 	result := x - y
-	fmt.Println("Result =", result)
+	return result
 }
