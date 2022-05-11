@@ -175,5 +175,6 @@ Collections
 
     Slice
         Varying size collection of data of the same type
-        
+
     Map
+        key/value collection 
