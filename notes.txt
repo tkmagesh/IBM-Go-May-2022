@@ -213,3 +213,7 @@ Structs
 
 Assignment:07
     Convert the Format & ApplyDiscount functions in assignment:06 as methods of the Product struct
+
+
+Concurrency Programming
+    NEVER assume the time taken for a goroutine to complete its task
