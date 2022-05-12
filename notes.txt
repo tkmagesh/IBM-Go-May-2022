@@ -209,3 +209,7 @@ Modularity
         
 
 Structs
+
+
+Assignment:07
+    Convert the Format & ApplyDiscount functions in assignment:06 as methods of the Product struct
