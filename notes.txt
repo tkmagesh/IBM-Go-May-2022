@@ -217,3 +217,7 @@ Assignment:07
 
 Concurrency Programming
     NEVER assume the time taken for a goroutine to complete its task
+
+    Channel Behavior
+        "Receive" operation is ALWAYS a blocking operation
+        "Send" operation is blocked until a "Receive" operation is initiated on the channel (conditions apply)
