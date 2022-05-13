@@ -221,3 +221,10 @@ Concurrency Programming
     Channel Behavior
         "Receive" operation is ALWAYS a blocking operation
         "Send" operation is blocked until a "Receive" operation is initiated on the channel (conditions apply)
+
+assignment:10
+Write a program that will generate n prime number starting from the given number in a goroutine and receive the generated prime numbers and print them in the main function
+
+genPrimes(start, count int){
+    
+}
