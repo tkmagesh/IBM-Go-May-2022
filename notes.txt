@@ -228,3 +228,20 @@ Write a program that will generate n prime numbers starting from the given numbe
 genPrimes(start, count int){
 
 }
+
+io
+    io package
+        Reader interface
+        Writer interface
+        Closer interface
+        Seeker interface
+
+    ioutil package
+        High level APIs for reading and writing files
+
+    os package
+        APIs for file manipulation
+            creating, opening & deleting files
+
+    bufio package
+        Buffered I/O
